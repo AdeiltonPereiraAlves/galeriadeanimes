@@ -1,0 +1,64 @@
+h1{
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+/* .item{
+    flex: 0 0 calc(33.33% - 10px);
+} */
+.img-gallery{
+    width: 300px;
+    height: 300px;
+    transition: 0.3s;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.img-gallery:hover{
+    transform: scale(1.1);
+}
+.lightbox{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 100;
+}
+.lightbox-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+.lightbox-img{
+
+    max-width: 800px;
+    object-fit: cover;
+    
+
+}
+.lightbox-close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: aliceblue;
+    border: 1px solid white ;
+    padding: 0.1rem 0.3rem;
+    transition: .4s;
+}
+
+.lightbox-close:hover{
+    background-color: #fff;
+    color: #000;
+}
