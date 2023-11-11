@@ -40,7 +40,7 @@ async function exibirAnime(url){
 })
 
 }
-for(let i = 0; i<4; i++){
+for(let i = 0; i<48; i++){
 
     await exibirAnime(url)
 }
